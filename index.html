@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TECH-SHOP</title>
+</head>
+<body>
+    <header>
+      
+        <div class="BarreDeNavigation">
+            <div class="logo" >
+                <img style="width: 200px;"  src="image/log.png" alt="">
+            </div>
+            <div class="navigation">
+                <div class="navi">
+                    <ul class="nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <select id="myList" onchange="window.location.href= this.value" >
+                                <option value="" selected >Produits</option>
+                                <option value="#phone">Smartphone</option>
+                                <option value="#ordi">Ordinateur</option>
+                                <option value="#access">Accessoire</option>
+                                <option value="#app-electroM">Appareil electromenager</option>
+                            </select>
+                        </li>
+                       
+                        <li><a href="page/login.html">Se Connecter</a></li>
+                        <li>
+                            <label for="theme-choix">Theme</label>
+                            <select id="theme-choix">
+                                <option value="white">Base</option>
+                                <option value="rouge">Dark Red</option>
+                                <option value="bleu" >Bleu</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+         
+            <div class="btn">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </header>
+    <section class="accueil">
+            <div class="contenant-accueil">
+                <div class="texte">
+                    <h1>TECH-SHOP</h1>
+                    <h3>Meilleur produit Electronique</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis voluptate vel reprehenderit sunt temporibus.</p>
+                    <button>Acheter</button>
+                </div>
+                <div class="">
+                    <img src="image/background.png" alt="">
+                </div>
+            </div>
+            <div class="nosProduits">
+                <h2 id="NosProduit">NOS PRODUITS</h2>
+                <a href="#phone"><i class="fa fa-angle-down"></i></a>
+            </div>
+            
+            
+    </section>
+    <!-- système de panier -->
+
+    <div class="panier">
+        <p class="nbr-panier"></p>
+    </div>
+    <div class="acheter">
+        <p class="nom-acheter"></p>
+    </div>
+    <section class="produits">
+        
+        
+        <div class="appareil" id="phone">
+            <div>
+                <h3>SMARTPHONE</h3>   
+            </div>
+            
+        </div>
+        <div class="listproduit">
+            <div class="produit">
+                <img src="image/iphone 13 pro.png" alt="">
+                <p class="nom">IPHONE 13 PRO</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    
+                    
+                </div>
+                <div class="prix">
+                    <p>9 000 AR</p>
+                    <a class="fa fa-shopping-cart"></a>
+                    
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/gp5.png" alt="">
+                <p class="nom">Google Pixel 5</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>10 000 AR</p>
+                    <a class="fa fa-shopping-cart"></a>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/rog5.png" alt="">
+                <p class="nom">ASUS ROG 5</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>20 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/p20.png" alt="">
+                <p class="nom">Huawei P20</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    
+                </div>
+                <div class="prix"> 
+                    <p>1 500 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/real8.png" alt="">
+                <p class="nom">Realme 8 Pro</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>6 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/oppof9.png" alt="">
+                <p class="nom">OPPO F19 PRO</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa fa-star "></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>50 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/phone1.png" alt="">
+                <p class="nom">IPHONE X</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa fa-star "></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>2 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/s21.png" alt="">
+                <p class="nom">Samsung S21 Ultra</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>5 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/vivo.png" alt="">
+                <p class="nom">Vivo iQOO Neo 5 </p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>5 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+    
+            </div>
+          
+    
+        
+        <div class="produit">
+            <img src="image/rn10.png" alt="">
+            <p class="nom">Redmi Note 10 Pro</p>
+            <p class="descri">Lorem ipsum dolor sit amet.</p>
+            <div class="etoile">
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+            </div>
+            <div class="prix">
+                <p>5 000 AR</p>
+                <p class="fa fa-shopping-cart"></p>
+            </div>
+    
+        </div>
+      
+       
+      
+    
+    </div>
+<!--UC LAPTOP-->
+<div class="appareil" id="ordi">
+    <div>
+        <h3>ORDINATEUR</h3>
+       
+        
+    </div>
+   
+</div>
+<div class="listproduit">
+    <div class="produit">
+        <img src="image/sword.png" alt="">
+        <p class="nom">SWORD 17</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            
+            
+        </div>
+        <div class="prix">
+            <p>9 000 AR</p>
+            <a class="fa fa-shopping-cart"></a>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/prestige.png" alt="">
+        <p class="nom">Prestige 16</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>10 000 AR</p>
+            <a class="fa fa-shopping-cart"></a>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/crosshair.png" alt="">
+        <p class="nom">Crosshair 16</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>20 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/vector.png" alt="">
+        <p class="nom">Vector GP68 HX</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            
+        </div>
+        <div class="prix"> 
+            <p>1 500 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/vortex.png" alt="">
+        <p class="nom">Vortex G65VR </p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>6 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/aegis.png" alt="">
+        <p class="nom">Aegis RS 10th</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa fa-star "></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>50 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/mpg trident.png" alt="">
+        <p class="nom">MPG Trident AS 10th</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa fa-star "></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>2 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/pr7.png" alt="">
+        <p class="nom">ASUS ROG</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa fa-star "></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>2 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+<!--Accessoire et materiel-->
+<div class="appareil" id="access">
+    <div>
+        <h3>ACCESSOIRE ET MATERIEL INFO</h3>    
+    </div>
+   
+</div>
+<div class="listproduit">
+    <div class="produit">
+        <img src="image/rtx3060.png" alt="">
+        <p class="nom">RTX 3060Ti</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            
+            
+        </div>
+        <div class="prix">
+            <p>9 000 AR</p>
+            <a class="fa fa-shopping-cart"></a>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/gtx-1080.png" alt="">
+        <p class="nom">GTX 1080Ti</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>10 000 AR</p>
+            <a class="fa fa-shopping-cart"></a>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/ds502.png" alt="">
+        <p class="nom">DS502 GAMING HEADSET</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>20 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/GamingMousepadXl.png" alt="">
+        <p class="nom">GAMING MOUSEPAD XL</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            
+        </div>
+        <div class="prix"> 
+            <p>1 500 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/Gk-701.png" alt="">
+        <p class="nom">GK-701 RGB GAMING KEYBOARD</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>6 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/vigor.png" alt="">
+        <p class="nom">VIGOR GK30 COMBO</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa fa-star "></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>50 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/cluch.png" alt="">
+        <p class="nom">CLUTCH GM11</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa fa-star "></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>2 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/gh30.png" alt="">
+        <p class="nom">IMMERSE GH30 V2</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa fa-star "></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>2 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/z590m.png" alt="">
+        <p class="nom">MPG Z590M</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa fa-star "></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+            <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>2 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+    <div class="produit">
+        <img src="image/pr12.png" alt="">
+        <p class="nom">JOYSTICKS</p>
+        <p class="descri">Lorem ipsum dolor sit amet.</p>
+        <div class="etoile">
+            <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+        </div>
+        <div class="prix">
+            <p>5 000 AR</p>
+            <p class="fa fa-shopping-cart"></p>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+   
+    <div class="appareilElectromenager" id="app-electroM">
+        <div class="appareil">
+            <div>
+                <h3>APPAREIL ELECTROMENAGER</h3>    
+            </div>
+           
+        </div>
+        <div class="listproduit">
+            <div class="produit">
+                <img src="image/pr1.png" alt="">
+                <p class="nom">Washion Machine</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    
+                </div>
+                <div class="prix">
+                    <p>9 000 AR</p>
+                    <a class="fa fa-shopping-cart"></a>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/pr2.png" alt="">
+                <p class="nom">AC</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>10 000 AR</p>
+                    <a class="fa fa-shopping-cart"></a>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/pr3.png" alt="">
+                <p class="nom">Microwave Oven</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>20 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/pr4.png" alt="">
+                <p class="nom">Fridge</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    
+                    
+                </div>
+                <div class="prix">
+                    <p>1 500 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/fridge1.png" alt="">
+                <p class="nom">SMART WATCH</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>6 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/pr6.png" alt="">
+                <p class="nom">MONITEUR PC</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>50 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/ac1.png" alt="">
+                <p class="nom">IPHONE X</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>2 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/boul.png" alt="">
+                <p class="nom">BOUILLOIRE</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>5 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+
+            </div>
+            <div class="produit">
+                <img src="image/fera.png" alt="">
+                <p class="nom">FER A REPPASSER</p>
+                <p class="descri">Lorem ipsum dolor sit amet.</p>
+                <div class="etoile">
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                    <i class="fa  fa-star"></i>
+                </div>
+                <div class="prix">
+                    <p>5 000 AR</p>
+                    <p class="fa fa-shopping-cart"></p>
+                </div>
+    
+            </div>
+          
+    
+        
+        <div class="produit">
+            <img src="image/mixe.png" alt="">
+            <p class="nom">MIXEUR</p>
+            <p class="descri">Lorem ipsum dolor sit amet.</p>
+            <div class="etoile">
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+                <i class="fa  fa-star"></i>
+            </div>
+            <div class="prix">
+                <p>5 000 AR</p>
+                <p class="fa fa-shopping-cart"></p>
+            </div>
+    
+        </div>
+       
+      
+      
+    
+    </div>
+    </div>
+
+</div>    
+    </div>
+
+
+
+
+</div>
+  
+
+</div>
+
+    </section>
+    
+    <footer>
+        <div class="pied">
+            <div>
+                <h4>TECH-SHOP</h4>
+                <div>
+                    <ul>
+                        <li>MADAGASCAR</li>
+                        <li>Antananarivo</li>
+                        <li>Téléphone: 0000000000</li>
+                        <li>Email: evarotra@gmail.com</li>
+                    </ul>
+                </div>
+              
+            </div>
+            <div>
+                <h4>Nos Produits</h4>
+                <div>
+                    <ul>
+                        <li>Smartphone</li>
+                        <li>Laptop</li>
+                        <li>UC GAMING</li>
+                        <li>Appareil Electromenager</li>
+                    </ul>
+                </div>   
+            </div>
+            <div>
+                <h4>Nos Resaux Sociaux</h4>
+                <div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>consectetur adipisicing elit.</p>
+                    <div class="logo-r">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

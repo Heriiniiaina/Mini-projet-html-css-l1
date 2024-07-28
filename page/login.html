@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TECH-SHOP</title>
+</head>
+<body>
+    <header>
+        <div class="BarreDeNavigation">
+            <div class="logo">
+                <img style="width: 180px;" src="../image/log.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul class="nav">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li>
+                        <select id="myList" onchange="window.location.href= this.value" >
+                            <option value="" selected >Produits</option>
+                            <option value="../index.html#phone">Smartphone</option>
+                            <option value="../index.#ordi">Ordinateur</option>
+                            <option value="../index.#access">Accessoire</option>
+                            <option value="../index.#app-electroM">Appareil electromenager</option>
+                        </select>
+                    </li>
+                    <li><a href="">Se Connecter</a></li>
+                    
+                </ul>
+            </div>
+         
+          
+        </div>
+    </header>
+    <section class="connecter">
+        <h3>Se connecter</h3>
+        <form action="">
+        <div>
+            <label for="">Email</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="">Mot de passe </label>
+            <input type="password" required>
+        </div>    
+            <button class="btn-login">Se connecter</button> 
+        <div>
+            <a href="">Mot de passe oublié</a>
+            <a href="register.html">Creer un compte</a>
+        </div>
+        </form>
+        
+    </section>
+</body>
+</html>
